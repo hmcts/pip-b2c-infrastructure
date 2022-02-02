@@ -1,1 +1,0 @@
-#TODO: https://docs.microsoft.com/en-us/azure/active-directory-b2c/microsoft-graph-operations#identity-providers
