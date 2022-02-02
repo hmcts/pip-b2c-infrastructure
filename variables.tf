@@ -24,3 +24,17 @@ variable "team_name" {
 variable "team_contact" {
   default = "#vh-devops"
 }
+
+variable "b2c_tenant_id" {
+  type        = string
+  description = "Tenant ID of where to deploy B2C"
+}
+variable "b2c_sku" {
+  type        = string
+  description = "Azure B2C SKU, either PremiumP1 or PremiumP2"
+  default     = "PremiumP1"
+  validation {
+    condition     = contains(["PremiumP1", "PremiumP2"], var.b2c_sku)
+    error_message = "Azure B2C SKUs are limited to PremiumP1 or PremiumP2."
+  }
+}

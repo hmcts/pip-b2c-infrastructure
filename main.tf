@@ -1,7 +1,7 @@
 locals {
-  prefix               = "${var.product}-ss-b2c"
-  prefix_no_special    = replace(local.prefix, "-", "")
-  env_long_name        = var.env == "sbox" ? "sandbox" : var.env == "stg" ? "staging" : var.env
+  prefix            = "${var.product}-ss-b2c"
+  prefix_no_special = replace(local.prefix, "-", "")
+  env_long_name     = var.env == "sbox" ? "sandbox" : var.env == "stg" ? "staging" : var.env
 }
 data "azurerm_client_config" "current" {}
 

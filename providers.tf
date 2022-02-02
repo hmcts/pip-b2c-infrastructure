@@ -17,6 +17,9 @@ terraform {
 
 provider "azurerm" {
   features {}
+  tenant_id = var.b2c_tenant_id
 }
 provider "random" {}
-provider "azuread" {}
+provider "azuread" {
+  tenant_id = var.b2c_tenant_id
+}
