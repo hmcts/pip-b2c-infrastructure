@@ -28,6 +28,7 @@ variable "team_contact" {
 variable "b2c_tenant_id" {
   type        = string
   description = "Tenant ID of where to deploy B2C"
+  default = ""
 }
 variable "b2c_sku" {
   type        = string
