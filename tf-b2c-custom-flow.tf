@@ -1,1 +1,0 @@
-##TODO: deploy custom flows https://docs.microsoft.com/en-us/azure/active-directory-b2c/deploy-custom-policies-devops
